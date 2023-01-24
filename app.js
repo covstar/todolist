@@ -1,61 +1,33 @@
-const express = require("express");
+const express = require('express');
 
-const bodyParser = require("body-parser");
-
+const bodyParser = require('body-parser');
 
 const app = express();
 
-app.set("view engine", "ejs");
 
-app.get("/", function(req, res){
+app.set('view engine', 'ejs');
 
-    let date = new Date();
-    let currentDay = date.getDay();
-    let day ="";
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
 
-                switch (currentDay) {
-            case 0:
-                day = 'Sunday';
-                break;
+let items = [];
 
-            case 1:
-                day = 'Monday';
-                break;
+app.get('/', function (req, res) {
+  let options = {weekday: 'long', month: 'long', day: '2-digit'};
+  let today = new Date();
 
-            case 2:
-                day = 'Tuesday';
-                break;
+  let day = today.toLocaleDateString('en-US', options);
 
-            case 3:
-                day = 'Wednesday';
-                break;
-
-            case 4:
-                day = 'Thursday';
-                break;
-
-            case 5:
-                day = 'Friday';
-                break;
-
-            case 6:
-                day = 'Saturday';
-                break;
-                   
-            }
-
-
-
-    res.render('list', {todaysDate: day});
-    
+  res.render('list', {todaysDate: day, newTodoItem: items});
 });
 
+app.post('/', function (req, res) {
+  const todo = req.body.newItem;
+  items.push (todo);
 
+  res.redirect('/');
+});
 
-
-
-
-
-app.listen(3000, function(){
-    console.log("Started listening at port 3000");
-})
+app.listen(3000, function () {
+  console.log('Started listening at port 3000');
+});
