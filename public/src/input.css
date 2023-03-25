@@ -30,7 +30,7 @@ body {
 .list-items li{
     @apply my-auto flex list-none w-full 
 }
-p{
+li p{
     @apply sm:text-xs md:text-xl mt-2 ml-auto font-semibold text-justify text-blackhey
 }
 .checkbox:checked ~ p {

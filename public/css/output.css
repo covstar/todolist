@@ -614,7 +614,7 @@ body{
   list-style-type: none;
 }
 
-p{
+li p{
   margin-top: 0.5rem;
   margin-left: auto;
   text-align: justify;
@@ -624,14 +624,14 @@ p{
 }
 
 @media (max-width: 720px){
-  p{
+  li p{
     font-size: 0.75rem;
     line-height: 1rem;
   }
 }
 
 @media (min-width: 722px){
-  p{
+  li p{
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
