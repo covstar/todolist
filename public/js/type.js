@@ -8,7 +8,7 @@
       var currentIndex = 0;
       
       // The time interval between each letter typed
-      var typingInterval = 150;
+      var typingInterval = 200;
       
       // The time interval between cleaning and typing the next word
       var cleaningInterval = 200;
