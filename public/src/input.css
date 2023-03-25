@@ -56,7 +56,7 @@ header{
     @apply mr-auto
 }
 footer {
-    @apply text-center  bg-indigo-600 p-8 text-grey
+    @apply text-center sm:mt-30% bg-indigo-600 p-8 text-grey
 }
 footer a{
     @apply text-pink-500
