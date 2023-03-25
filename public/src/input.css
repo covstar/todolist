@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+body {
+    @apply font-Montserrat bg-img relative bg-no-repeat bg-center
+}
+.overlay{
+    @apply absolute w-full h-full bg-slate-400 bg-opacity-30 -z-10
+}
+
+.date {
+    @apply mx-auto mb-10% text-center text-2xl sm:text-lg flex w-full border-b-darker-teal border-b-2  rounded-md px-2 font-bold
+}
+.date h1 {
+    @apply  mr-auto
+}
+.Todolist-body{
+    @apply justify-center sm:my-40% my-12% relative  mx-auto  rounded-md p-8 border-2 border-indigo-800 bg-gradient-to-r from-blue-100 to-blue-200 shadow-md shadow-purple-700 w-fit md:w-2/4
+}
+.fa-clipboard-list{
+    @apply text-indigo-900  
+}
+
+.list-items li{
+    @apply my-auto flex list-none w-full 
+}
+p{
+    @apply sm:text-xs md:text-xl mt-2 ml-auto
+}
+.checkbox:checked ~ p {
+    @apply line-through decoration-darker-teal text-gray-400 decoration-auto
+}
+.input-section {
+    @apply flex items-center mt-5%
+}
+.input-section input {
+    @apply relative mt-8 rounded-full w-full h-10 pl-4 pr-20 outline-none text-sm py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-grey placeholder:text-gray-300
+}
+.input-section button {
+    @apply  mt-8 absolute right-9 bg-indigo-500 px-4 h-8 text-lg rounded-full text-white hover:bg-purple-800 shadow-sm shadow-amber-700
+}
+
+header{
+    @apply bg-indigo-600 p-8 sm:p-4 text-grey text-5xl font-black sm:text-2xl sm:font-bold
+}
+.my-header{
+    @apply flex 
+}
+.header-text{
+    @apply mr-auto
+}
+footer {
+    @apply text-center  bg-indigo-600 p-8 text-grey
+}
+footer a{
+    @apply text-pink-500
+}
+
+@tailwind utilities;

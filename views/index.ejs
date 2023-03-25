@@ -1,0 +1,26 @@
+
+   
+   <div  class="Todolist-body">
+        <div class="date">
+            <h1><%- date %>, Todo List </h1>
+            <i class="fa-solid fa-clipboard-list"></i>
+        </div>
+        <div>
+           <% for(let i = 0; i < newItems.length; i++) { %>
+                <div class="list-items">
+                    <li>
+                        <input class="checkbox" type="checkbox">
+                        <p><%= newItems[i] %></p>
+                    </li>
+                </div>
+          <%  } %>
+        </div>
+        <form action="/" method="post">
+    
+            <div class="input-section">
+                <input placeholder="" type="text" name="userInput" aria-autocomplete="none" required>
+                <button type="submit" name="button">Add</button>
+            </div>
+        </form>
+    </div>
+
