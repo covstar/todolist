@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
     "build": "tailwindcss -i ./public/src/input.css -o ./public/css/output.css --watch"
   },
   "author": "covstar",
