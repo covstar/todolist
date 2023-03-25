@@ -21,7 +21,7 @@ body {
     @apply  mr-auto
 }
 .Todolist-body{
-    @apply justify-center sm:my-40% my-12% relative  mx-auto  rounded-md p-8 border-2 border-indigo-800 bg-gradient-to-r from-blue-100 to-blue-200 shadow-md shadow-purple-700 w-fit md:w-2/4
+    @apply justify-center sm:my-60% my-12% relative  mx-auto  rounded-md p-8 border-2 border-indigo-800 bg-gradient-to-r from-blue-100 to-blue-200 shadow-md shadow-purple-700 w-fit md:w-2/4
 }
 .fa-clipboard-list{
     @apply text-indigo-900  
