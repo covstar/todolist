@@ -8,7 +8,7 @@
 @tailwind components;
 
 body {
-    @apply font-Montserrat bg-img relative bg-no-repeat bg-center
+    @apply font-Montserrat bg-img relative bg-no-repeat bg-center sm:h-screen
 }
 .overlay{
     @apply absolute w-full h-full bg-black bg-opacity-70 -z-10
@@ -20,8 +20,11 @@ body {
 .date h1 {
     @apply  mr-auto
 }
+main{
+    @apply sm:px-4
+}
 .Todolist-body{
-    @apply justify-center sm:my-60% my-12% relative  mx-auto  rounded-md p-8 border-2 border-blackhey bg-white shadow-md shadow-purple-700 w-fit md:w-2/4
+    @apply justify-center  my-12% relative  mx-auto  rounded-md p-8 border-2 border-blackhey bg-white shadow-md shadow-purple-700 w-fit md:w-2/4 sm:w-full
 }
 .fa-clipboard-list{
     @apply text-blackhey 
@@ -56,7 +59,7 @@ header{
     @apply mr-auto
 }
 footer {
-    @apply text-center sm:mt-30% bg-blackhey p-8 text-grey
+    @apply text-center sm:mt-60% bg-blackhey p-8 text-grey
 }
 footer a{
     @apply text-pink-500
