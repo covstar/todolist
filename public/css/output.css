@@ -598,6 +598,7 @@ body{
 @media (max-width: 720px){
   .Todolist-body{
     margin-top: 30%;
+    margin-bottom: 30%;
     width: 100%;
   }
 }
