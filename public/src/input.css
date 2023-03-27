@@ -24,7 +24,7 @@ main{
     @apply sm:px-4
 }
 .Todolist-body{
-    @apply justify-center sm:my-30% my-12% relative  mx-auto  rounded-md p-8 border-2 border-blackhey bg-white shadow-md shadow-purple-700 w-fit md:w-2/4 sm:w-full
+    @apply justify-center sm:my-50% my-12% relative  mx-auto  rounded-md p-8 border-2 border-blackhey bg-white shadow-md shadow-purple-700 w-fit md:w-2/4 sm:w-full
 }
 .fa-clipboard-list{
     @apply text-blackhey 
