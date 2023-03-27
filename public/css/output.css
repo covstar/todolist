@@ -520,7 +520,6 @@ video {
 }
 
 body{
-  position: relative;
   background-image: url('https://covstar.sirv.com/Images/undraw_diary_re_4jpc.svg');
   background-position: center;
   background-repeat: no-repeat;
@@ -597,8 +596,6 @@ body{
 
 @media (max-width: 720px){
   .Todolist-body{
-    margin-top: 60%;
-    margin-bottom: 60%;
     width: 100%;
   }
 }
@@ -746,7 +743,10 @@ header{
   margin-right: auto;
 }
 
-footer{
+.footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(51 44 57 / var(--tw-bg-opacity));
   padding: 2rem;
@@ -755,13 +755,7 @@ footer{
   color: rgb(240 238 237 / var(--tw-text-opacity));
 }
 
-@media (max-width: 720px){
-  footer{
-    margin-top: 60%;
-  }
-}
-
-footer a{
+.footer a{
   --tw-text-opacity: 1;
   color: rgb(236 72 153 / var(--tw-text-opacity));
 }
