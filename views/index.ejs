@@ -6,14 +6,18 @@
             <i class="fa-solid fa-clipboard-list"></i>
         </div>
         <div>
-           <% for(let i = 0; i < newItems.length; i++) { %>
-                <div class="list-items">
-                    <li>
-                        <input class="checkbox" type="checkbox">
-                        <p><%= newItems[i] %></p>
-                    </li>
-                </div>
-          <%  } %>
+           <% newItems.forEach(list => { %>
+            <div class="list-items">
+                <li>
+                    <input class="checkbox" type="checkbox">
+                    <p>
+                        <%= list %>
+                    </p>
+                </li>
+            </div>
+            <% }); %>
+                
+         
         </div>
         <form action="/" method="post">
     
